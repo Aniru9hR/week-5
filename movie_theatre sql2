@@ -1,0 +1,86 @@
+INSERT INTO movies(
+	movie_id,
+	movie_name,
+	director,
+	genre,
+	duration
+)VALUES(
+	01,
+	'Jurassic World',
+	'Colin Trevorrow',
+	'Action,Science Fiction,Adventure,Thriller',
+	124
+),(
+	02,
+	'The Avengers',
+	'Joss Whedon',
+	'Action,Science Fiction,Adventure,Fantasy',
+	143
+),(
+	03,
+	'Iron Man 3',
+	'Shane Black',
+	'Action,Science Fiction,Adventure,Superhero,Comedy',
+	143
+);
+
+INSERT INTO customers(
+	customer_id,
+	movie_id,
+	first_name,
+	last_name,
+	customer_mobile,
+	email
+)VALUES(
+	001,
+	02,
+	'James',
+	'White',
+	'5138939230',
+	'james.524@gmail.com'	
+),(
+	002,
+	01,
+	'Jane',
+	'Watson',
+	'8136894390',
+	'jane.watson2@gmail.com'
+)
+;
+
+INSERT INTO tickets(
+	ticket_id,
+	customer_id,
+	movie_id,
+	seat_number,
+	screen_number,
+	price
+)VALUES(
+	123,
+	001,
+	02,
+	'A01',
+	'B1',
+	25.20
+),(
+	456,
+	002,
+	01,
+	'B01',
+	'A2',
+	22.30
+);
+
+INSERT INTO concessions(
+	product_id,
+	movie_id,
+	ticket_id
+)VALUES(
+	164,
+	02,
+	123
+),(
+	172,
+	01,
+	456
+);
